@@ -194,6 +194,7 @@ def player_stats(player)
 end
 
 def gib_array(team)
+  #helper method for big shoe rebounds
   biggest_shoe_array = [0, 0]
   team[:players].each {|person|
     if person[:shoe] > biggest_shoe_array[0]
